@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="card">
+    <section class="card-header">
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </section>
+    <section class="card-main">
+      <article class="card-main__article">
+        <h2 class="card-main__article-title">Order Summary</h2>
+        <p class="card-main__article-text">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+      </article>
+      <div class="card-main__plans">
+        <div class="card-main__plans-item">
+          <img src="images/icon-music.svg" alt="logo" class="card-main__plans-item__logo">
+          <div class="card-main__plans-item__description">
+            <h3 class="card-main__plans-item__description-title">Annual Plan</h3>
+            <p class="card-main__plans-item__description-price">
+              <span class="card-main__plans-item__description-price__currency">$</span>
+              <span class="card-main__plans-item__description-price__value">59.99</span>
+              <span class="card-main__plans-item__description-price__separator">/</span>
+              <span class="card-main__plans-item__description-price__period">year</span>
+            </p>
+          </div>
+          <a href="#" class="card-main__plans-item__btn">Change</a>
+        </div>
+      </div>
+    </section>
+    <section class="card-footer">
+      <a href="#" class="card-footer__payment-btn">Proceed to Payment</a>
+      <a href="#" class="card-footer__cancel-btn"> Cancel Order</a>
+    </section>
   </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/SuhodolecA?tab=repositories" target="_blank">Anton Sukhadolets</a>.
+  </footer>
 </body>
+
 </html>
