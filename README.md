@@ -1,6 +1,8 @@
 # Frontend Mentor - Order summary card
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+[Link to solution](https://order-summary-component-main-gamma-eight.vercel.app/)
+
+![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)]
 
 ## Welcome! 👋
 
