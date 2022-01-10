@@ -34,6 +34,7 @@ body {
 
 .content-container {
   max-width: 340px;
+  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -103,6 +104,71 @@ body {
 }
 
 .card-main__plans-item__btn {
+  color: #3829e0;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
   margin-left: auto;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.card-main__plans-item__btn:hover {
+  color: #594cf0;
+  text-decoration: none;
+}
+
+.card-main__plans-item__btn:active {
+  color: #4141c8;
+  text-decoration: none;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-footer-btns {
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-footer__payment-btn {
+  background: #3829e0;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px -10px #7280a7;
+          box-shadow: 0 10px 30px -10px #7280a7;
+  margin-bottom: 30px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.card-footer__payment-btn:hover {
+  background: #6255e7;
+}
+
+.card-footer__payment-btn:active {
+  background: #8b82ed;
+}
+
+.card-footer__cancel-btn {
+  color: #7280a7;
+  margin-bottom: 30px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.card-footer__cancel-btn:hover {
+  color: #1f2f56;
 }
 /*# sourceMappingURL=style.css.map */

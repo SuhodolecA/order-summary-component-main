@@ -35,6 +35,7 @@ body {
 
 .content-container {
     max-width: 340px;
+    width: 100%;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -99,10 +100,67 @@ body {
                 }
 
                 &__btn {
+                    color: $bright-blue;
+                    font-family: $ff-rhd;
+                    font-weight: 900;
                     margin-left: auto;
+                    transition: all .2s linear;
+
+                    &:hover {
+                        color: hsl(245, 85%, 62%);
+                        text-decoration: none;
+                    }
+
+                    &:active {
+                        color: hsl(240, 55%, 52%);
+                        text-decoration: none;
+                    }
                 }
             }
 
+        }
+    }
+
+    &-footer {
+        display: flex;
+        flex-direction: column;
+
+        &-btns {
+            text-decoration: none;
+            font-family: $ff-rhd;
+            font-weight: 900;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        &__payment-btn {
+            background: $bright-blue;
+            color: hsl(100, 100%, 100%);
+            padding: 15px 0;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px -10px $desaturated-blue;
+            margin-bottom: 30px;
+            transition: all .3s linear;
+
+            &:hover {
+                background: hsl(245, 75%, 62%);
+            }  
+
+            &:active {
+                background: hsl(245, 75%, 72%);
+            }   
+        }
+
+        &__cancel-btn {
+            color: $desaturated-blue;
+            margin-bottom: 30px;
+            transition: all .3s linear;
+            
+
+            &:hover {
+                color: $dark-blue;
+            }
         }
     }
 }
