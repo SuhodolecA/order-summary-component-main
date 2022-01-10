@@ -22,6 +22,7 @@ $ff-rhd: 'Red Hat Display', sans-serif;
 
 body {
     font-family: $ff-outfit;
+    font-weight: 500;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -33,7 +34,8 @@ body {
 }
 
 .content-container {
-    max-width: 320px;
+    max-width: 340px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 // === / common styles ===
@@ -53,12 +55,13 @@ body {
 
     &-main {
         margin-top: 40px;
-        font-family: $ff-rhd;
         color: $desaturated-blue;
 
         &__article-title {
             color: $dark-blue;
             margin-bottom: 20px;
+            font-family: $ff-rhd;
+            font-weight: 900;
         }
 
         &__article-text {
@@ -67,6 +70,39 @@ body {
 
         &__plans {
             margin-top: 20px;
+            margin-bottom: 30px;
+            background: $very-pale-blue;
+            border-radius: 10px;
+            padding: 20px;
+
+            &-item {
+                display: flex;
+                align-items: center;
+
+                &__logo {
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+
+                &__description {
+
+                    &-title{
+                        color: $dark-blue;
+                        font-family: $ff-rhd;
+                        font-weight: 900;
+                        font-size: 15px;
+                    }
+
+                    &-price {
+                        display: flex;
+                    }
+                }
+
+                &__btn {
+                    margin-left: auto;
+                }
+            }
+
         }
     }
 }
